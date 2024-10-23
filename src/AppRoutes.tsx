@@ -2,7 +2,6 @@ import React from "react";
 import {Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import FloppaTv from "./FloppaTv";
-import IconicFloppa from "./IconicFloppa";
 import FloppaQuiz from './FloppaQuiz';
 import Results from "./Results";
 
@@ -11,7 +10,6 @@ const AppRoutes = () => {
     <Routes> 
     <Route path="/" element={<Home></Home>}></Route>
     <Route path="/floppatv" element={<FloppaTv></FloppaTv>}></Route>
-    <Route path="/iconicfloppa" element={<IconicFloppa></IconicFloppa>}></Route>
     <Route path="/floppaquiz" element={<FloppaQuiz></FloppaQuiz>}></Route>
     <Route path="/results" element={<Results></Results>}></Route>
 
