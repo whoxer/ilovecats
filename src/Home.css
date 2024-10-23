@@ -131,6 +131,7 @@ html {
 
     width: 350px;
 }
+
 .titulo {
     font-family: 'GoblinOne-Regular', sans-serif;
     font-style: normal;
@@ -198,72 +199,126 @@ html {
 }
 
 @media (max-width: 768px) {
-  .imggithub{
-    height: 50px;
-    width: 50px;
+  .iconcontainer {
+      display: flex;
+      align-items: center;
+  
+      user-select: none;
   }
-  .githcontainer{
-    margin-right: 5px;
+  
+  .caticon {
+      width: 60px;
+      height: 60px;
+  
+      float: left;
   }
-  .buttonscontainer{
-      margin-left: 5px;
-      white-space: nowrap;
-  }
-  .barbutton{
-    margin: 5px;
-    padding: 10px;
-    font-size: 10px;
-  }
-  .ilovefloppaimg{
-    width: 300px;
-  }
-  .ilovefloppatxt{
+  .lovecats {
+    margin-left: 10px; 
     font-size: 30px;
-    top: 15%;
+    color: #F5F5F5;
+  
+    font-family: 'Inika', serif;
   }
-  .homepagedecor{
-    margin-top: 150px;
+  .bar {
+    position: absolute;
+    background: #424242;
+
+    padding: 10px;
+    margin: 5px;
+    width: 90%;
+
+    border-radius: 10px;
+
+    justify-content: left;
+    display: flex;
+    flex-direction: row;
+
+    z-index: 999;
+    top: 0%;
   }
-  .introduction{
-    text-align: center;
-    font-size: 13px;
-    margin-top: 15px;
-    margin-left: 50px;
-    margin-right: 50px;
+  .buttonscontainer {
+      display: none;
+  }
+  .cat-image {
+    display: block;
+    margin-top: 100px;
+
+    width: 200px;
+  }
+ .homepagedecor {
+    margin-top: 100px;
+    display: block;
+    margin: 0;
+  }
+  .hpdecorcontainer {
+    display: block;
+  }
+  .introtxt {
+    border-radius: 0;
+  }
+  .curiosidades {
+    border-radius: 0;
   }
 }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  .imggithub{
-    height: 80px;
-    width: 80px;
+.iconcontainer {
+      display: flex;
+      align-items: center;
+  
+      user-select: none;
   }
-  .githcontainer{
-    margin-right: 10px;
+  
+  .caticon {
+      width: 60px;
+      height: 60px;
+  
+      float: left;
   }
-  .buttonscontainer{
-      margin-left: 10px;
-      white-space: nowrap;
+  .lovecats {
+    margin-left: 10px; 
+    font-size: 30px;
+    color: #F5F5F5;
+  
+    font-family: 'Inika', serif;
   }
-  .barbutton{
+  .bar {
+    position: absolute;
+    background: #424242;
+
+    padding: 10px;
     margin: 5px;
-    padding: 15px;
-    font-size: 15px;
+    width: 90%;
+
+    border-radius: 10px;
+
+    justify-content: left;
+    display: flex;
+    flex-direction: row;
+
+    z-index: 999;
+    top: 0%;
   }
-  .ilovefloppaimg{
-    width: 500px;
+  .buttonscontainer {
+      display: none;
   }
-  .ilovefloppatxt{
-    font-size: 35px;
-    top: 15%;
+  .cat-image {
+    display: block;
+    margin-top: 100px;
+
+    width: 200px;
   }
-  .homepagedecor{
-    margin-top: 150px;
+ .homepagedecor {
+    margin-top: 100px;
+    display: block;
+    margin: 0;
   }
-  .introduction{
-    text-align: center;
-    font-size: 20px;
-    margin-top: 15px;
-    margin-left: 50px;
-    margin-right: 50px;
+  .hpdecorcontainer {
+    display: block;
+  }
+  .introtxt {
+    border-radius: 0;
+  }
+  .curiosidades {
+    border-radius: 0;
   }
 }
