@@ -13,11 +13,11 @@ const Home = () => {
         </div>
 
         <div className="buttonscontainer">
+          <Link to={"https://github.com/whoxer/ilovecats"}>
+            <button className="barbutton">💾 Github do Projeto</button>
+          </Link>
           <Link to={"#"}>
             <button className="barbutton">📺 Gato TV </button>
-          </Link>
-          <Link to="#">
-            <button className="barbutton">📒 Gato Quiz</button>
           </Link>
           <Link to={"#"}>
             <button className="barbutton">😼 Gatos Irados</button>
