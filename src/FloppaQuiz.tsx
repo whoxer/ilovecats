@@ -103,7 +103,7 @@ const FloppaQuiz = () => {
       <button className="quizbtn" onClick={handleSubmit}>SUBMIT</button>
      
     </div>
-            </div> )
-            };
+  </div> 
+)};
 
 export default FloppaQuiz;
