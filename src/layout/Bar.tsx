@@ -12,14 +12,11 @@ const Bar = () => {
         </div>
 
         <div className="buttonscontainer">
+          <Link to={"/webcats"}>
+            <button className="barbutton">😼 Gatos Irados</button>
+          </Link>
           <Link to={"https://github.com/whoxer/ilovecats"}>
             <button className="barbutton">💾 Github do Projeto</button>
-          </Link>
-          <Link to={"#"}>
-            <button className="barbutton">📺 Gato TV </button>
-          </Link>
-          <Link to={"#"}>
-            <button className="barbutton">😼 Gatos Irados</button>
           </Link>
         </div>
       </div>
