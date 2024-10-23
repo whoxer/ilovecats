@@ -1,18 +1,13 @@
 import React from "react";
 import {Routes, Route } from "react-router-dom";
 import Home from "../pages/Home";
-import FloppaTv from "../FloppaTv";
-import FloppaQuiz from '../FloppaQuiz';
-import Results from "../Results";
+import WebCats from "../pages/WebCats";
 
 const AppRoutes = () => {
   return ( //this function will return all the routes and export it so they can be placed on the Browser Router on the main file
     <Routes> 
-    <Route path="/" element={<Home></Home>}></Route>
-    <Route path="/floppatv" element={<FloppaTv></FloppaTv>}></Route>
-    <Route path="/floppaquiz" element={<FloppaQuiz></FloppaQuiz>}></Route>
-    <Route path="/results" element={<Results></Results>}></Route>
-
+      <Route path="/" element={<Home></Home>}></Route>
+      <Route path="/webcats" element={<WebCats></WebCats>}></Route>
     </Routes>
   );
 };
