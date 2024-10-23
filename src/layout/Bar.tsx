@@ -12,7 +12,8 @@ const Bar = () => {
         </div>
 
         <div className="buttonscontainer">
-          <Link to={"/webcats"}>
+          {/* webcats */}
+          <Link to={"#"}>
             <button className="barbutton">😼 Gatos Irados</button>
           </Link>
           <Link to={"https://github.com/whoxer/ilovecats"}>
