@@ -1,8 +1,5 @@
-
 import spinningcat from "../images/maxwell-cat-spin.gif"
-
 import Bar from "../layout/Bar";
-
 import "./Home.css";
 
 const Home = () => {

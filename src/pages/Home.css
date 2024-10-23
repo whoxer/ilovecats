@@ -21,7 +21,7 @@
 }
 
 html {
-  background-color: #F5F5F5;
+  background-color: #229799;
 }
 
 .screen {
@@ -94,6 +94,7 @@ html {
 .introtxt {
   padding: 20px;
   background-color: #229799;
+
 
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
