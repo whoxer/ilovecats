@@ -30,7 +30,7 @@ const Home = () => {
           <img
             className="cat-image"
             src={spinningcat}
-            alt="an orange and yellow heart with a caracal cat inside"
+            alt="Gato Maxwell do meme Gato giratório ou Spinning Cat"
           />
 
           <div className="introtxt">
