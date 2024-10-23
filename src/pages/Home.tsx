@@ -1,30 +1,14 @@
+
+import spinningcat from "../images/maxwell-cat-spin.gif"
+
+import Bar from "../layout/Bar";
+
 import "./Home.css";
-import caticon from "./images/animal.png";
-import spinningcat from "./images/maxwell-cat-spin.gif"
-import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
     <div className="screen">
-      <div className="bar">
-        <div className="iconcontainer">
-          <img src={caticon} className="caticon" alt="Ícone de novelo de lã" />
-          <span className="lovecats">I ❤️ Cats</span>
-        </div>
-
-        <div className="buttonscontainer">
-          <Link to={"https://github.com/whoxer/ilovecats"}>
-            <button className="barbutton">💾 Github do Projeto</button>
-          </Link>
-          <Link to={"#"}>
-            <button className="barbutton">📺 Gato TV </button>
-          </Link>
-          <Link to={"#"}>
-            <button className="barbutton">😼 Gatos Irados</button>
-          </Link>
-        </div>
-      </div>
-
+      <Bar/>
       <div className="homepagedecor">
         <div className="hpdecorcontainer">
           <img

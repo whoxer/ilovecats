@@ -1,12 +1,12 @@
 /* Fontes */
 @font-face {
   font-family: 'Goblin One';
-  src: url('./fonts/GoblinOne-Regular.ttf') format('truetype');  
+  src: url('../fonts/GoblinOne-Regular.ttf') format('truetype');  
 }
 
 @font-face {
   font-family: 'Inika';
-  src: url('./fonts/Inika-Regular.ttf') format('truetype');
+  src: url('../fonts/Inika-Regular.ttf') format('truetype');
 }
 /* Fim de fontes */
 
@@ -35,81 +35,6 @@ html {
   flex-direction: column;
 }
 /* fim do corpo geral*/
-
-
-/* ícone e título do site */
-.iconcontainer {
-    display: flex;
-    align-items: center;
-
-    user-select: none;
-}
-
-.caticon {
-    width: 60px;
-    height: 60px;
-
-    float: left;
-}
-
-.lovecats {
-  margin-left: 10px; 
-  font-size: 30px;
-  color: #F5F5F5;
-
-  font-family: 'Inika', serif;
-}
-
-/* bar stuff and buttons */
-.bar {
-    position: absolute;
-    background: #424242;
-
-    padding: 10px;
-    margin: 5px;
-    width: 80%;
-
-    border-radius: 5px;
-
-    justify-content: left;
-    display: flex;
-    flex-direction: row;
-
-    z-index: 999;
-    top: 0%;
-}
-
-.buttonscontainer {
-  width: 100%;
-  
-  display: flex;
-
-  justify-content: right;
-  align-items: right;
-  text-align: left;
-}
-
-.barbutton {
-  background-color: #229799;
-  color: #F5F5F5;
-  
-  font-family: 'Inika';
-  
-  margin: 15px;
-  padding: 10px 20px;
-  border-radius: 10px;
-  font-size: 20px;
-
-  border: none;
-  cursor: pointer;
-}
-
-.barbutton:hover {
-  background-color: #F5F5F5;
-  color: #229799;
-}
-
-/* ----------------------------------------- */
 
 
 .homepagedecor {
