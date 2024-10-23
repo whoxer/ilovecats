@@ -27,11 +27,8 @@ html {
 .screen {
   display: flex;
 
-
   align-items: center;
-
   justify-content: center;
-
   flex-direction: column;
 }
 /* fim do corpo geral*/
