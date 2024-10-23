@@ -1,172 +1,269 @@
+/* Fontes */
 @font-face {
   font-family: 'Goblin One';
-  src: url('./fonts/GoblinOne-Regular.ttf') format('truetype');
-  
+  src: url('./fonts/GoblinOne-Regular.ttf') format('truetype');  
 }
+
 @font-face {
   font-family: 'Inika';
   src: url('./fonts/Inika-Regular.ttf') format('truetype');
-  
 }
+/* Fim de fontes */
+
+
+/* Corpo geral da página */
+
 * {
   margin: 0;
   padding: 0;
+  
   box-sizing: border-box;
 }
-.screen{
+
+html {
+  background-color: #F5F5F5;
+}
+
+.screen {
   display: flex;
+
+
   align-items: center;
+
   justify-content: center;
+
   flex-direction: column;
 }
-.bar{
-  position: absolute;
-  background: #78533E;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  align-items: center;
-  padding: 15px;
-  display: flex;
-  flex-direction: row;
+/* fim do corpo geral*/
+
+
+/* ícone e título do site */
+.iconcontainer {
+    display: flex;
+    align-items: center;
+
+    user-select: none;
+}
+
+.caticon {
+    width: 60px;
+    height: 60px;
+
+    float: left;
+}
+
+.lovecats {
+  margin-left: 10px; 
+  font-size: 30px;
+  color: #F5F5F5;
+
+  font-family: 'Inika', serif;
+}
+
+/* bar stuff and buttons */
+.bar {
+    position: absolute;
+    background: #424242;
+
+    padding: 10px;
+    margin: 5px;
+    width: 80%;
+
+    border-radius: 5px;
+
+    justify-content: left;
+    display: flex;
+    flex-direction: row;
+
+    z-index: 999;
+    top: 0%;
+}
+
+.buttonscontainer {
   width: 100%;
+  
+  display: flex;
+
+  justify-content: right;
+  align-items: right;
+  text-align: left;
+}
+
+.barbutton {
+  background-color: #229799;
+  color: #F5F5F5;
+  
+  font-family: 'Inika';
+  
+  margin: 15px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 20px;
+
+  border: none;
+  cursor: pointer;
+}
+
+.barbutton:hover {
+  background-color: #F5F5F5;
+  color: #229799;
+}
+
+/* ----------------------------------------- */
+
+
+.homepagedecor {
+    margin-top: 150px;
+
+    border-radius: 15px;
+
+    margin-left: 400px;
+    margin-right: 400px;
+}
+
+.hpdecorcontainer {
+    display: flex;
+}
+
+.cat-image {
+    display: flex;
+    margin: 0 auto;
+
+    width: 350px;
+}
+.titulo {
+    font-family: 'GoblinOne-Regular', sans-serif;
+    font-style: normal;
+    color: #F5F5F5;
+
+    white-space: normal;    
+
+    margin-top: 20px;
+
+    margin-left: 10px;
+    margin-right: 10px;
+
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.text {
+    font-family: 'Inika', serif;
+
+    color: #F5F5F5;
+
+    font-size: 20px;
+    
+    margin-top: 10px;
+
+    margin-left: 10px;
+    margin-right: 10px;
+
+    padding-left: 10px;
+    padding-right: 10px;
+
+    white-space: normal;
+
+    text-align: left;
+}
+.introtxt {
+  padding: 20px;
+  background-color: #229799;
+
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+
   justify-content: center;
-  z-index: 999;
-  top:0%;
+
+  display: block;
+}
+
+.curiosidades {
+  background-color: #424242;
+  padding: 20px;
+
+  display: block;
+
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+
+  border-bottom-right-radius: 10px;
+}
+
+.yellow {
+  color: yellow;
+}
+
+.yellow:hover {
+  color: #F5F5F5;
+}
+
+@media (max-width: 768px) {
+  .imggithub{
+    height: 50px;
+    width: 50px;
   }
   .githcontainer{
-      margin: 0 15px;
+    margin-right: 5px;
   }
-  .imggithub{
-      border-radius: 50%;
-      width: 80px;
-      height: 80px;
-      border: 1px solid #FDC980;
-      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  .buttonscontainer{
+      margin-left: 5px;
+      white-space: nowrap;
   }
   .barbutton{
-      background-color: #78533E;
-      color: #fff;
-      font-family: 'Inika';
-      margin: 20px;
-      padding: 15px;
-      border-radius: 45px;
-      border: none;
-      cursor: pointer;
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-      font-weight: bold;
-      font-size: 15px;
-      line-height: 20px;
-      align-items: center;
-      text-align: center;
-  
+    margin: 5px;
+    padding: 10px;
+    font-size: 10px;
+  }
+  .ilovefloppaimg{
+    width: 300px;
+  }
+  .ilovefloppatxt{
+    font-size: 30px;
+    top: 15%;
   }
   .homepagedecor{
-      margin-top: 150px;
-  }
-  .hpdecorcontainer {
-      position: relative;
-    }
-    
-    .ilovefloppatxt {
-      font-family: 'Goblin One';
-      position: absolute;
-      top: 20%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      color: #78533E;
-      font-size: 40px;
-      font-weight: bolder;
-      text-align: center;
-      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-      white-space: nowrap;
-    }
-
-  .ilovefloppaimg{
-      display: block;
-      margin: 0 auto;
-      width: 500px;
-      width: 500px;
+    margin-top: 150px;
   }
   .introduction{
-      font-family: 'Inika';
-      font-weight: bold;
-      color: #272424;
-      font-size: 20px;
-      margin-top: 0px;
-      white-space:normal;
-      text-align: center;
+    text-align: center;
+    font-size: 13px;
+    margin-top: 15px;
+    margin-left: 50px;
+    margin-right: 50px;
   }
-  .introtxt{
-    padding: 20px;
-    justify-content: center;
-    display: block;
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .imggithub{
+    height: 80px;
+    width: 80px;
   }
-      @media (max-width: 768px) {
-        .imggithub{
-          height: 50px;
-          width: 50px;
-        }
-        .githcontainer{
-          margin-right: 5px;
-        }
-        .buttonscontainer{
-            margin-left: 5px;
-            white-space: nowrap;
-        }
-        .barbutton{
-          margin: 5px;
-          padding: 10px;
-          font-size: 10px;
-        }
-        .ilovefloppaimg{
-          width: 300px;
-        }
-        .ilovefloppatxt{
-          font-size: 30px;
-          top: 15%;
-        }
-        .homepagedecor{
-          margin-top: 150px;
-        }
-        .introduction{
-          text-align: center;
-          font-size: 13px;
-          margin-top: 15px;
-          margin-left: 50px;
-          margin-right: 50px;
-        }
-      }
-      @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-        .imggithub{
-          height: 80px;
-          width: 80px;
-        }
-        .githcontainer{
-          margin-right: 10px;
-        }
-        .buttonscontainer{
-            margin-left: 10px;
-            white-space: nowrap;
-        }
-        .barbutton{
-          margin: 5px;
-          padding: 15px;
-          font-size: 15px;
-        }
-        .ilovefloppaimg{
-          width: 500px;
-        }
-        .ilovefloppatxt{
-          font-size: 35px;
-          top: 15%;
-        }
-        .homepagedecor{
-          margin-top: 150px;
-        }
-        .introduction{
-          text-align: center;
-          font-size: 20px;
-          margin-top: 15px;
-          margin-left: 50px;
-          margin-right: 50px;
-        }
-      }
+  .githcontainer{
+    margin-right: 10px;
+  }
+  .buttonscontainer{
+      margin-left: 10px;
+      white-space: nowrap;
+  }
+  .barbutton{
+    margin: 5px;
+    padding: 15px;
+    font-size: 15px;
+  }
+  .ilovefloppaimg{
+    width: 500px;
+  }
+  .ilovefloppatxt{
+    font-size: 35px;
+    top: 15%;
+  }
+  .homepagedecor{
+    margin-top: 150px;
+  }
+  .introduction{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 15px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
